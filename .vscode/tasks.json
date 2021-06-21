@@ -11,6 +11,15 @@
                 "${workspaceFolder}/manage.py",
                 "runserver"
             ]
-        }
+        },
+        {
+            "label": "migrate",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "${workspaceFolder}/manage.py",
+                "migrate"
+            ]
+        },
     ]
 }
