@@ -21,5 +21,22 @@
                 "migrate"
             ]
         },
+        {
+            "label": "makemigrations",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "${workspaceFolder}/manage.py",
+                "makemigrations",
+                "${input:makemigrations1}"
+            ]
+        },
+    ],
+    "inputs": [
+        {
+            "id": "makemigrations1",
+            "description": "Input app_label (empty for update differences)",
+            "type": "promptString"
+        }
     ]
 }
