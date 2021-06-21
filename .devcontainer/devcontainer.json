@@ -15,4 +15,6 @@
         "njpwerner.autodocstring",
         "donjayamanne.githistory",
     ],
+
+    "forwardPorts": [8000]
 }
