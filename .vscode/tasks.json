@@ -31,11 +31,26 @@
                 "${input:makemigrations1}"
             ]
         },
+        {
+            "label": "test",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "${workspaceFolder}/manage.py",
+                "test",
+                "${input:test1}"
+            ]
+        },
     ],
     "inputs": [
         {
             "id": "makemigrations1",
             "description": "Input app_label (empty for update differences)",
+            "type": "promptString"
+        },
+        {
+            "id": "test1",
+            "description": "Input test test_label (empty for run all tests)",
             "type": "promptString"
         }
     ]
